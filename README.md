@@ -1,6 +1,9 @@
 # react-native-admob-ironsource-adapter
 
-Wrapper of ironsource adapter for admob mediation
+STILL in WIP
+
+Wrapper of ironsource adapter for admob mediation.
+
 
 ## Installation
 
@@ -12,11 +15,11 @@ npm install react-native-admob-ironsource-adapter
 
 
 ```js
-import { multiply } from 'react-native-admob-ironsource-adapter';
+import IronSourceAdapter from 'react-native-admob-ironsource-adapter';
 
 // ...
 
-const result = multiply(3, 7);
+const result = IronSourceAdapter.setConsent(true);
 ```
 
 
