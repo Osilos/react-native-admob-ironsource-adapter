@@ -93,6 +93,7 @@ android {
 repositories {
   mavenCentral()
   google()
+  maven { url "https://android-sdk.is.com/" }  // ✅ IronSource Maven repository
 }
 
 def kotlin_version = getExtOrDefault("kotlinVersion")
@@ -100,6 +101,9 @@ def kotlin_version = getExtOrDefault("kotlinVersion")
 dependencies {
   implementation "com.facebook.react:react-android"
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+  implementation "com.google.android.gms:play-services-ads:23.6.0"
+  implementation "com.google.ads.mediation:ironsource:8.6.1.0"
 }
 
 if (isNewArchitectureEnabled()) {

@@ -2,6 +2,7 @@ package com.admobironsourceadapter
 
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.module.annotations.ReactModule
+import com.ironsource.mediationsdk.IronSource
 
 @ReactModule(name = AdmobIronsourceAdapterModule.NAME)
 class AdmobIronsourceAdapterModule(reactContext: ReactApplicationContext) :
@@ -11,10 +12,8 @@ class AdmobIronsourceAdapterModule(reactContext: ReactApplicationContext) :
     return NAME
   }
 
-  // Example method
-  // See https://reactnative.dev/docs/native-modules-android
-  override fun multiply(a: Double, b: Double): Double {
-    return a * b
+  override fun setConsent(consent: Boolean) {
+      IronSource.setConsent(consent)
   }
 
   companion object {
