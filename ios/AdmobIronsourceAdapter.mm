@@ -1,12 +1,11 @@
 #import "AdmobIronsourceAdapter.h"
+#import "IronSource/IronSource.h"
 
 @implementation AdmobIronsourceAdapter
 RCT_EXPORT_MODULE()
 
-- (NSNumber *)multiply:(double)a b:(double)b {
-    NSNumber *result = @(a * b);
-
-    return result;
+- (void) setConsent:(BOOL)value {
+  [IronSource setConsent:value];
 }
 
 - (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:
