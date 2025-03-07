@@ -1,6 +1,6 @@
 {
   "name": "react-native-admob-ironsource-adapter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wrapper of ironsource adapter for admob mediation",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
